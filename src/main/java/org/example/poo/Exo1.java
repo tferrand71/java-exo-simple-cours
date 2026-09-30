@@ -5,6 +5,21 @@ package org.example.poo;
  * ajoute un constructeur pour initialiser les valeurs
  * crée un objet Personne et affiche ses infos
  */
+
+public class Personne {
+    String nom;
+    int age;
+
+    // constructeur : reçoit les valeurs au moment de créer l'objet
+    public Personne(String nom, int age) {
+        this.nom = nom;
+        this.age = age;
+    }
+
+    public void afficher() {
+        System.out.println("Je m'appelle " + nom + " et j'ai " + age + " ans");
+    }
+}
 public class Exo1 {
     public static void main(String[] args) {
         Personne p1 = new Personne("Alice", 25);
@@ -13,4 +28,6 @@ public class Exo1 {
         Personne p2 = new Personne("Bob", 40);
         p2.afficher();
     }
+
 }
+
